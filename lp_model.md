@@ -2,10 +2,14 @@
 
 Minimize the total expected cost $Z$:
 
-$ Z = \sum_{i \in T}\sum_{j \in \text{Banks}}\sum_
-{p=1}^{4} [(1 - x_{i, j}) * A_i * k_{p} * Pr_i + y_{ijp} * F_{p} - x_{i, j} * A_i * k_{p} * Pr_i] $
+$ Z = \sum_{i \in T}\sum_{j \in Bk}\sum_
+{p=1}^{4} [(1 - x_{ijp}) * A_i * k_{p} * Pr_i + y_{ijp} * F_{p} - x_{i, j} * A_i * k_{p} * Pr_i] $
 
 Where:
+
+**Sets**:
+- $ T $: is the set of transaction_id's for the given day.
+- $ Bk $: is the set of all banks $Bk =  \{A, B , C, D, E\}$
 
 **Decision Variables**:
 
@@ -24,19 +28,19 @@ Where:
 **Dynamic Parameters**(AiDusted daily):
 
 - $ Pr_i $ is the estimated probability of transaction $ i $ being fraudulent.
-- $ k_{p} $ is the priority multiplier for transaction $ i $.
+- $ k_{p} $ is the priority multiplier for transaction $ p $.
 
 And the estimated probability $ Pr_i $ is given by:
 
-$ p = \text{transac\_prob}_i \cdot w_1 + \text{customer\_prob}_i \cdot w_2 $
+$ Pr_i = \text{transac\_prob}_i \cdot w_1 + \text{customer\_prob}_i \cdot w_2 $
 
-### Refinement of Parameters:
+### Refinement of Parameters, Iterative Learning:
 
-Start with equal weights $ w_1 = w_2 = 0.5 $ and aiDust them iteratively based on the learning outcomes.
+Start with:
+- $ w_1 = w_2 = 0.5 $ 
+- $k_1 = 0.25, k_2 = 0.5, k_3 = 1, k_4 = 2$
 
-**Iterative Learning:**
-- As the model runs daily, update the weights $ w_1 $ and $ w_2 $ based on the outcomes of the investigations. Also
-update the $k_{p}$ priority multipliers for the four priorities.
+and adjust them iteratively based on the learning outcomes.
 
 ### Constraints:
 
@@ -44,28 +48,25 @@ update the $k_{p}$ priority multipliers for the four priorities.
 
 1. **For Bank A**:
 
-   $ 0.25 \cdot \sum_{i \in T}\sum_{p \in P1} x_{iAp} + 0.5 \cdot \sum_{i \in T}\sum_{p \in P2} x_{iAp} + \sum_{i \in
-   T}\sum_{p \in P3} x_{iAp} + 2 \cdot \sum_{i \in T}\sum_{p \in P4} x_{iAp} \leq 8 $
+   $ 0.25 \cdot \sum_{i \in T}
+   [\sum_{p \in P1} x_{iAp} + 0.5 \cdot \sum_{p \in P2} x_{iAp} + \sum_{i \in
+   T}\sum_{p \in P3} x_{iAp} + 2 \cdot \sum_{p \in P4} x_{iAp}] \leq 8 $
 
 2. **For Bank B**:
 
-   $ 0.25 \cdot \sum_{i \in T}\sum_{p \in P1} x_{iBp} + 0.5 \cdot \sum_{i \in T}\sum_{p \in P2} x_{iBp} + \sum_{i \in
-   T}\sum_{p \in P3} x_{iBp} + 2 \cdot \sum_{i \in T}\sum_{p \in P4} x_{iBp} \leq 12 $
+   $ 0.25 \cdot \sum_{i \in T}[\sum_{p \in P1} x_{iBp} + 0.5 \cdot \sum_{p \in P2} x_{iBp} + \sum_{p \in P3} x_{iBp} + 2 \cdot \sum_{p \in P4} x_{iBp}] \leq 12 $
 
 3. **For Bank C**:
 
-   $ 0.25 \cdot \sum_{i \in T}\sum_{p \in P1} x_{iCp} + 0.5 \cdot \sum_{i \in T}\sum_{p \in P2} x_{iCp} + \sum_{i \in
-   T}\sum_{p \in P3} x_{iCp} + 2 \cdot \sum_{i \in T}\sum_{p \in P4} x_{iCp} \leq 10 $
+   $ 0.25 \cdot \sum_{i \in T}[\sum_{p \in P1} x_{iCp} + 0.5 \cdot \sum_{p \in P2} x_{iCp} +\sum_{p \in P3} x_{iCp} + 2 \cdot \sum_{p \in P4} x_{iCp}] \leq 10 $
 
 4. **For Bank D**:
 
-   $ 0.25 \cdot \sum_{i \in T}\sum_{p \in P1} x_{iDp} + 0.5 \cdot \sum_{i \in T}\sum_{p \in P2} x_{iDp} + \sum_{i \in
-   T}\sum_{p \in P3} x_{iDp} + 2 \cdot \sum_{i \in T}\sum_{p \in P4} x_{iDp} \leq 10 $
+   $ 0.25 \cdot \sum_{i \in T}[\sum_{p \in P1} x_{iDp} + 0.5 \cdot \sum_{p \in P2} x_{iDp} +\sum_{p \in P3} x_{iDp} + 2 \cdot \sum_{p \in P4} x_{iDp}]\leq 10 $
 
 5. **For Bank E**::
 
-   $ 0.25 \cdot \sum_{i \in T}\sum_{p \in P1} x_{iEp} + 0.5 \cdot \sum_{i \in T}\sum_{p \in P2} x_{iEp} + \sum_{i \in
-   T}\sum_{p \in P3} x_{iEp} + 2 \cdot \sum_{i \in T}\sum_{p \in P4} x_{iEp} \leq 10 $
+   $ 0.25 \cdot \sum_{i \in T}[\sum_{p \in P1} x_{iEp} + 0.5 \cdot \sum_{p \in P2} x_{iEp} +\sum_{p \in P3} x_{iEp} + 2 \cdot \sum_{p \in P4} x_{iEp}]\leq 10 $
 
 ### Shared Resource Constraints (if applicable):
 
@@ -79,7 +80,7 @@ where $ i $ and $ m $ are different banks and transaction $ j $ is eligible to b
 
 - Only one investigator (internal or external) can investigate a transaction at any given time:
 
-$x_{ijp} + y_{ijp} \leq 1 \forall j \isin \text{Banks}$
+$x_{ijp} + y_{ijp} \leq 1 \forall j \isin Bk$
 
 ### Binary Variable Constraints:
 
