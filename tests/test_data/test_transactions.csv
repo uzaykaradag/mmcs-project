@@ -1,0 +1,201 @@
+transaction_id,description,amount,category,date,month,customer_id,type,in_or_out,bank_to,bank_from,transac_prob,description_prob,priority,home_bank,customer_prob
+2343,Utilities Payment - Water and Sewer,65.0,Utilities,2023-10-01,October,17699,spending,paid_out,bank_C,bank_A,0.51,0.43,1,bank_A,0.66
+2413,Rent Payment,1200.0,Housing,2023-10-01,October,17699,spending,paid_out,bank_D,bank_A,0.64,0.38,3,bank_A,0.66
+3350,Internet Service Payment - Provider Name,70.0,Utilities,2023-10-02,October,17699,spending,paid_out,bank_C,bank_A,0.39,0.55,1,bank_A,0.66
+4355,Hy-Vee,40.0,Groceries,2023-10-03,October,17699,spending,paid_out,bank_A,bank_A,0.37,0.66,1,bank_A,0.66
+4831,Phone Bill Payment - Wireless Provider,65.0,Utilities,2023-10-03,October,17699,spending,paid_out,bank_C,bank_A,0.48,0.11,1,bank_A,0.66
+5984,Restaurant Dinner - Date Night,90.0,Dining Out,2023-10-04,October,17699,spending,paid_out,bank_E,bank_A,0.43,0.16,2,bank_A,0.66
+5986,Transfer to Investment Account,500.0,Transfers,2023-10-04,October,17699,spending,paid_out,bank_C,bank_A,0.62,0.1,3,bank_A,0.66
+5987,Credit Card Payment - Visa **** 4567,95.75,Credit Card Payment,2023-10-04,October,17699,spending,paid_out,bank_C,bank_A,0.55,0.21,2,bank_A,0.66
+5988,Restaurant Lunch - Business Meeting,75.0,Dining Out,2023-10-04,October,17699,spending,paid_out,bank_E,bank_A,0.55,0.66,1,bank_A,0.66
+6001,Verizon Wireless - Monthly Phone Bill,75.5,Utilities,2023-10-04,October,17699,spending,paid_out,bank_E,bank_A,0.53,0.2,1,bank_A,0.66
+6408,Home Healthcare Services - Nursing Care,180.0,Healthcare,2023-10-05,October,17699,spending,paid_out,bank_E,bank_A,0.54,0.48,3,bank_A,0.66
+6409,Home Improvement - Paint and Supplies,110.75,Home Improvement,2023-10-05,October,17699,spending,paid_out,bank_A,bank_A,0.49,0.43,2,bank_A,0.66
+6523,Credit Card Payment - Visa **** 7890,85.25,Credit Card Payment,2023-10-05,October,17699,spending,paid_out,bank_E,bank_A,0.64,0.56,2,bank_A,0.66
+8052,Transfer to Vacation Fund,400.0,Transfers,2023-10-06,October,17699,spending,paid_out,bank_E,bank_A,0.6,0.56,3,bank_A,0.66
+8071,Mango - Fashion Shopping,120.0,Shopping,2023-10-06,October,17699,spending,paid_out,bank_C,bank_A,0.67,0.59,2,bank_A,0.66
+10929,Smart & Final,35.0,Groceries,2023-10-10,October,17699,spending,paid_out,bank_E,bank_A,0.17,0.34,1,bank_A,0.66
+13478,Charitable Donation - Red Cross,50.0,Charity,2023-10-12,October,17699,spending,paid_out,Intrnl,bank_A,0.34,0.53,3,bank_A,0.66
+15353,Dental Implant Surgery - Implant Procedure,180.0,Healthcare,2023-10-14,October,17699,spending,paid_out,bank_D,bank_A,0.69,0.29,3,bank_A,0.66
+15367,Amazon.com - Online Shopping,120.99,Online Shopping,2023-10-14,October,17699,spending,paid_out,bank_E,bank_A,0.47,0.3,2,bank_A,0.66
+17558,Car Loan Payment - Auto Finance Inc.,300.0,Loan Payment,2023-10-17,October,17699,spending,paid_out,bank_C,bank_A,0.6,0.59,3,bank_A,0.66
+17559,Dining Out - Restaurant Name,65.75,Dining Out,2023-10-17,October,17699,spending,paid_out,bank_E,bank_A,0.56,0.35,1,bank_A,0.66
+17574,Zara - Clothing Purchase,150.0,Shopping,2023-10-17,October,17699,spending,paid_out,bank_D,bank_A,0.59,0.18,2,bank_A,0.66
+17653,Bank Account Verification - Immediate Response Needed,41.95,Transfers,2023-10-17,October,17699,spending,paid_out,bank_E,bank_A,0.11,0.73,1,bank_A,0.66
+18361,Grocery Store - Household Supplies,60.25,Groceries,2023-10-18,October,17699,spending,paid_out,bank_E,bank_A,0.43,0.68,1,bank_A,0.66
+18364,Sainsbury's,40.0,Groceries,2023-10-18,October,17699,spending,paid_out,bank_A,bank_A,0.23,0.7,1,bank_A,0.66
+18580,Police Admin Fees,42.6,Utilities,2023-10-18,October,17699,spending,paid_out,bank_B,bank_A,0.16,0.86,1,bank_A,0.66
+19087,Amazon Prime Membership Renewal,12.99,Online Shopping,2023-10-18,October,17699,spending,paid_out,Intrnl,bank_A,0.14,0.1,3,bank_A,0.66
+20593,Rheumatology Clinic - Joint Health Check,150.0,Healthcare,2023-10-20,October,17699,spending,paid_out,bank_C,bank_A,0.44,0.43,2,bank_A,0.66
+20594,Kroger,40.0,Groceries,2023-10-20,October,17699,spending,paid_out,bank_A,bank_A,0.28,0.52,1,bank_A,0.66
+22137,Grocery Store - Fresh Produce,35.45,Groceries,2023-10-21,October,17699,spending,paid_out,bank_B,bank_A,0.34,0.69,1,bank_A,0.66
+22841,Credit Card Payment - Mastercard **** 5678,150.0,Credit Card Payment,2023-10-22,October,17699,spending,paid_out,bank_C,bank_A,0.58,0.15,2,bank_A,0.66
+24382,Asda,50.0,Groceries,2023-10-24,October,17699,spending,paid_out,bank_A,bank_A,0.22,0.7,1,bank_A,0.66
+24396,Wegmans,60.0,Groceries,2023-10-24,October,17699,spending,paid_out,bank_D,bank_A,0.57,0.57,1,bank_A,0.66
+26035,Online Retailer - Clothing Purchase,75.99,Online Shopping,2023-10-25,October,17699,spending,paid_out,bank_B,bank_A,0.54,0.16,1,bank_A,0.66
+26968,Transfer to Savings Account - Rainy Day Fund,300.0,Transfers,2023-10-26,October,17699,spending,paid_out,bank_A,bank_A,0.77,0.12,3,bank_A,0.66
+27326,Amazon.com - Online Shopping,89.99,Online Shopping,2023-10-27,October,17699,spending,paid_out,Intrnl,bank_A,0.48,0.6,4,bank_A,0.66
+27674,Coffee Shop - Morning Brew,5.25,Dining Out,2023-10-27,October,17699,spending,paid_out,bank_E,bank_A,0.34,0.47,1,bank_A,0.66
+27678,Online Retailer - Electronics Purchase,199.99,Online Shopping,2023-10-27,October,17699,spending,paid_out,bank_E,bank_A,0.54,0.59,3,bank_A,0.66
+27679,Fuel Purchase - Gas Station,46.4,Transportation,2023-10-27,October,17699,spending,paid_out,bank_E,bank_A,0.11,0.64,1,bank_A,0.66
+27993,Forever 21 - Accessories,15.0,Shopping,2023-10-28,October,17699,spending,paid_out,bank_D,bank_A,0.36,0.28,1,bank_A,0.66
+29718,Credit Card Payment - Mastercard **** 2345,125.5,Credit Card Payment,2023-10-29,October,17699,spending,paid_out,bank_D,bank_A,0.53,0.24,2,bank_A,0.66
+29727,Whole Foods Market,70.0,Groceries,2023-10-29,October,17699,spending,paid_out,bank_D,bank_A,0.41,0.5,1,bank_A,0.66
+30566,Fuel Purchase - Gas Station,42.75,Transportation,2023-10-30,October,17699,spending,paid_out,bank_E,bank_A,0.21,0.14,1,bank_A,0.66
+30629,PacSun - Casual Wear,35.0,Shopping,2023-10-30,October,17699,spending,paid_out,bank_A,bank_A,0.2,0.69,1,bank_A,0.66
+30630,Transfer to Vacation Fund,350.0,Transfers,2023-10-30,October,17699,spending,paid_out,bank_C,bank_A,0.57,0.33,3,bank_A,0.66
+30631,Transfer to Emergency Fund,150.0,Transfers,2023-10-30,October,17699,spending,paid_out,bank_A,bank_A,0.42,0.55,2,bank_A,0.66
+31080,Whole Foods Market - Grocery Shopping,50.75,Groceries,2023-10-31,October,17699,spending,paid_out,bank_A,bank_A,0.4,0.62,1,bank_A,0.66
+33505,Utilities Payment - Water and Sewer,65.0,Utilities,2023-11-01,November,17699,spending,paid_out,bank_C,bank_A,0.4,0.45,1,bank_A,0.66
+33515,Rent Payment,1200.0,Housing,2023-11-01,November,17699,spending,paid_out,bank_A,bank_A,0.58,0.5,3,bank_A,0.66
+33742,Piggly Wiggly,35.0,Groceries,2023-11-01,November,17699,spending,paid_out,bank_E,bank_A,0.24,0.51,1,bank_A,0.66
+34121,Internet Service Payment - Provider Name,70.0,Utilities,2023-11-02,November,17699,spending,paid_out,bank_C,bank_A,0.58,0.43,1,bank_A,0.66
+36214,Credit Card Payment - Discover **** 9012,120.5,Credit Card Payment,2023-11-03,November,17699,spending,paid_out,Intrnl,bank_A,0.66,0.53,4,bank_A,0.66
+36454,Gas Station - Fuel Purchase,42.75,Transportation,2023-11-03,November,17699,spending,paid_out,bank_A,bank_A,0.21,0.64,1,bank_A,0.66
+36511,Electronics Purchase - Online Store,34.45,Electronics,2023-11-03,November,17699,spending,paid_out,bank_D,bank_A,0.27,0.52,1,bank_A,0.66
+36701,Phone Bill Payment - Wireless Provider,65.0,Utilities,2023-11-03,November,17699,spending,paid_out,bank_C,bank_A,0.53,0.32,1,bank_A,0.66
+36992,Verizon Wireless - Monthly Phone Bill,75.5,Utilities,2023-11-04,November,17699,spending,paid_out,bank_E,bank_A,0.43,0.56,1,bank_A,0.66
+37937,HEB Grocery,55.0,Groceries,2023-11-04,November,17699,spending,paid_out,bank_E,bank_A,0.54,0.15,1,bank_A,0.66
+37944,Transfer to Vacation Fund,300.0,Transfers,2023-11-04,November,17699,spending,paid_out,bank_B,bank_A,0.66,0.44,3,bank_A,0.66
+37975,Credit Card Payment - Visa **** 1234,50.75,Credit Card Payment,2023-11-04,November,17699,spending,paid_out,bank_A,bank_A,0.55,0.68,1,bank_A,0.66
+38005,Food Basics,30.0,Groceries,2023-11-04,November,17699,spending,paid_out,bank_A,bank_A,0.26,0.33,1,bank_A,0.66
+38313,Transfer to Investment Account,500.0,Transfers,2023-11-05,November,17699,spending,paid_out,bank_D,bank_A,0.56,0.65,3,bank_A,0.66
+41332,Tesco,55.0,Groceries,2023-11-08,November,17699,spending,paid_out,bank_A,bank_A,0.41,0.12,1,bank_A,0.66
+41350,Food Lion,45.0,Groceries,2023-11-08,November,17699,spending,paid_out,bank_E,bank_A,0.37,0.24,1,bank_A,0.66
+41352,Coffee Shop - Latte and Croissant,6.75,Dining Out,2023-11-08,November,17699,spending,paid_out,bank_E,bank_A,0.25,0.51,1,bank_A,0.66
+42931,Whole Foods Market - Grocery Shopping,50.75,Groceries,2023-11-09,November,17699,spending,paid_out,bank_E,bank_A,0.38,0.59,1,bank_A,0.66
+44936,Online Retailer - Electronics Purchase,199.99,Online Shopping,2023-11-12,November,17699,spending,paid_out,bank_A,bank_A,0.61,0.55,3,bank_A,0.66
+44941,Transfer to Investment Account,500.0,Transfers,2023-11-12,November,17699,spending,paid_out,bank_A,bank_A,0.65,0.23,3,bank_A,0.66
+45973,Smart & Final,35.0,Groceries,2023-11-13,November,17699,spending,paid_out,bank_C,bank_A,0.23,0.29,1,bank_A,0.66
+45980,Giant Food,45.0,Groceries,2023-11-13,November,17699,spending,paid_out,bank_E,bank_A,0.37,0.47,1,bank_A,0.66
+46496,Gas Station - Fuel Purchase,40.45,Transportation,2023-11-13,November,17699,spending,paid_out,bank_B,bank_A,0.25,0.31,1,bank_A,0.66
+46498,Credit Card Payment - Visa **** 1234,75.25,Credit Card Payment,2023-11-13,November,17699,spending,paid_out,bank_B,bank_A,0.49,0.14,1,bank_A,0.66
+46758,Inheritance Release - Pay the Legal Fees,47.6,Utilities,2023-11-13,November,17699,spending,paid_out,bank_E,bank_A,0.17,0.3,1,bank_A,0.66
+46763,Online Retailer - Clothing Purchase,80.99,Online Shopping,2023-11-13,November,17699,spending,paid_out,Intrnl,bank_A,0.7,0.19,4,bank_A,0.66
+48385,Electronics Store - Gadget Purchase,250.5,Electronics,2023-11-15,November,17699,spending,paid_out,bank_D,bank_A,0.75,0.16,3,bank_A,0.66
+48560,Target Grocery,50.0,Groceries,2023-11-15,November,17699,spending,paid_out,bank_D,bank_A,0.18,0.5,1,bank_A,0.66
+48567,Transfer from Current to Savings,200.0,Transfers,2023-11-15,November,17699,spending,paid_out,bank_A,bank_A,0.68,0.69,3,bank_A,0.66
+48732,Credit Card Payment - Mastercard **** 2345,120.25,Credit Card Payment,2023-11-15,November,17699,spending,paid_out,bank_C,bank_A,0.64,0.48,2,bank_A,0.66
+49404,Amazon.com - Online Shopping,89.99,Online Shopping,2023-11-16,November,17699,spending,paid_out,bank_E,bank_A,0.53,0.41,2,bank_A,0.66
+49832,Boohoo - Cheap Fashion Finds,25.0,Shopping,2023-11-17,November,17699,spending,paid_out,bank_C,bank_A,0.16,0.25,1,bank_A,0.66
+52602,Medical Consultation - Doctor's Office,75.0,Healthcare,2023-11-19,November,17699,spending,paid_out,bank_A,bank_A,0.31,0.33,1,bank_A,0.66
+52616,Trader Joe's,50.0,Groceries,2023-11-19,November,17699,spending,paid_out,bank_D,bank_A,0.16,0.36,1,bank_A,0.66
+53767,JCPenney - Discount Fashion,40.0,Shopping,2023-11-21,November,17699,spending,paid_out,bank_C,bank_A,0.33,0.33,1,bank_A,0.66
+54428,Home Improvement - Hardware Store,85.6,Home Improvement,2023-11-21,November,17699,spending,paid_out,bank_E,bank_A,0.48,0.5,2,bank_A,0.66
+54892,Cotton On - Affordable Clothing,25.0,Shopping,2023-11-22,November,17699,spending,paid_out,bank_A,bank_A,0.18,0.55,1,bank_A,0.66
+54907,Coffee Shop - Morning Espresso,4.5,Dining Out,2023-11-22,November,17699,spending,paid_out,bank_D,bank_A,0.24,0.6,1,bank_A,0.66
+56533,Fast Food - Lunch Combo,10.5,Dining Out,2023-11-24,November,17699,spending,paid_out,bank_B,bank_A,0.3,0.2,1,bank_A,0.66
+58870,Charitable Donation - Charity Name,30.0,Charity,2023-11-26,November,17699,spending,paid_out,bank_C,bank_A,0.26,0.64,1,bank_A,0.66
+58871,Restaurant Lunch - Business Meeting,75.0,Dining Out,2023-11-26,November,17699,spending,paid_out,bank_D,bank_A,0.38,0.29,1,bank_A,0.66
+59738,Online Retailer - Electronics Purchase,199.99,Online Shopping,2023-11-27,November,17699,spending,paid_out,bank_C,bank_A,0.64,0.38,3,bank_A,0.66
+59808,Geriatric Psychiatry - Elderly Mental Health,170.0,Healthcare,2023-11-27,November,17699,spending,paid_out,bank_E,bank_A,0.66,0.37,3,bank_A,0.66
+61475,Credit Card Payment - Mastercard **** 5678,135.5,Credit Card Payment,2023-11-29,November,17699,spending,paid_out,Intrnl,bank_A,0.4,0.13,4,bank_A,0.66
+63231,V&I visa check fees ,268.05,Utilities,2023-12-01,December,17699,spending,paid_out,bank_B,bank_A,0.54,0.79,3,bank_A,0.66
+64017,Utilities Payment - Water and Sewer,65.0,Utilities,2023-12-01,December,17699,spending,paid_out,bank_C,bank_A,0.32,0.51,1,bank_A,0.66
+64083,Rent Payment,1200.0,Housing,2023-12-01,December,17699,spending,paid_out,bank_B,bank_A,0.58,0.46,3,bank_A,0.66
+64094,Decathlon - Sportswear Shopping,60.0,Shopping,2023-12-01,December,17699,spending,paid_out,bank_D,bank_A,0.54,0.47,1,bank_A,0.66
+66766,Internet Service Payment - Provider Name,70.0,Utilities,2023-12-02,December,17699,spending,paid_out,bank_C,bank_A,0.33,0.58,1,bank_A,0.66
+66795,Trader Joe's,50.0,Groceries,2023-12-02,December,17699,spending,paid_out,bank_C,bank_A,0.4,0.61,1,bank_A,0.66
+66998,Car Loan Payment - Auto Finance Inc.,300.0,Loan Payment,2023-12-03,December,17699,spending,paid_out,bank_E,bank_A,0.61,0.44,3,bank_A,0.66
+67014,Credit Card Payment - Visa **** 1234,50.75,Credit Card Payment,2023-12-03,December,17699,spending,paid_out,bank_D,bank_A,0.36,0.65,1,bank_A,0.66
+67015,Phone Bill Payment - Wireless Provider,65.0,Utilities,2023-12-03,December,17699,spending,paid_out,bank_C,bank_A,0.48,0.56,1,bank_A,0.66
+67100,Transfer from Current to Savings,200.0,Transfers,2023-12-03,December,17699,spending,paid_out,bank_A,bank_A,0.62,0.67,3,bank_A,0.66
+69173,Verizon Wireless - Monthly Phone Bill,75.5,Utilities,2023-12-04,December,17699,spending,paid_out,bank_E,bank_A,0.39,0.54,1,bank_A,0.66
+69660,Gap - Kids' Fashion,30.0,Shopping,2023-12-05,December,17699,spending,paid_out,bank_C,bank_A,0.34,0.15,1,bank_A,0.66
+69748,Home Improvement Store - DIY Supplies,75.4,Home Improvement,2023-12-05,December,17699,spending,paid_out,bank_B,bank_A,0.54,0.6,1,bank_A,0.66
+69774,Restaurant Dinner - Date Night,90.0,Dining Out,2023-12-05,December,17699,spending,paid_out,bank_C,bank_A,0.51,0.45,2,bank_A,0.66
+70535,Transfer to Vacation Fund,400.0,Transfers,2023-12-06,December,17699,spending,paid_out,bank_B,bank_A,0.71,0.36,3,bank_A,0.66
+71802,Chase Credit Card Payment - Visa **** 1234,350.25,Credit Card Payment,2023-12-07,December,17699,spending,paid_out,bank_E,bank_A,0.7,0.2,3,bank_A,0.66
+73057,Restaurant - Dinner with Friends,100.0,Dining Out,2023-12-08,December,17699,spending,paid_out,bank_D,bank_A,0.56,0.66,2,bank_A,0.66
+74066,Grocery Shopping - Super Value Mart,55.25,Groceries,2023-12-09,December,17699,spending,paid_out,bank_D,bank_A,0.48,0.33,1,bank_A,0.66
+75774,Urban Outfitters - Affordable Fashion,55.0,Shopping,2023-12-11,December,17699,spending,paid_out,bank_E,bank_A,0.43,0.25,1,bank_A,0.66
+76334,Medical Nutrition Therapy - Dietary Consultation,95.0,Healthcare,2023-12-12,December,17699,spending,paid_out,bank_A,bank_A,0.45,0.26,2,bank_A,0.66
+76335,Food Basics,30.0,Groceries,2023-12-12,December,17699,spending,paid_out,bank_C,bank_A,0.21,0.6,1,bank_A,0.66
+76336,Transfer from Current to Savings,150.0,Transfers,2023-12-12,December,17699,spending,paid_out,bank_A,bank_A,0.65,0.12,2,bank_A,0.66
+78068,Target Grocery,50.0,Groceries,2023-12-14,December,17699,spending,paid_out,bank_C,bank_A,0.14,0.47,1,bank_A,0.66
+79280,Charitable Donation - Charity Name,50.0,Charity,2023-12-15,December,17699,spending,paid_out,bank_E,bank_A,0.2,0.21,1,bank_A,0.66
+81348,Grocery Shopping - Supermart,56.75,Groceries,2023-12-17,December,17699,spending,paid_out,bank_D,bank_A,0.44,0.46,1,bank_A,0.66
+81443,Transfer to Investment Account,500.0,Transfers,2023-12-17,December,17699,spending,paid_out,bank_A,bank_A,0.59,0.33,3,bank_A,0.66
+81997,Facebook Marketplace Upfront payment,33.85,Utilities,2023-12-18,December,17699,spending,paid_out,bank_A,bank_A,0.35,0.66,1,bank_A,0.66
+82426,Coffee Shop - Morning Brew,4.75,Dining Out,2023-12-18,December,17699,spending,paid_out,bank_B,bank_A,0.12,0.37,1,bank_A,0.66
+82433,Coffee Shop - Cappuccino,5.25,Dining Out,2023-12-18,December,17699,spending,paid_out,bank_E,bank_A,0.18,0.14,1,bank_A,0.66
+83580,Electronics Store - Gadget Purchase,180.75,Electronics,2023-12-20,December,17699,spending,paid_out,Intrnl,bank_A,0.62,0.58,4,bank_A,0.66
+85300,Credit Card Payment - Mastercard **** 5678,135.5,Credit Card Payment,2023-12-22,December,17699,spending,paid_out,bank_E,bank_A,0.41,0.4,2,bank_A,0.66
+85312,Credit Card Payment - Mastercard **** 2345,125.5,Credit Card Payment,2023-12-22,December,17699,spending,paid_out,bank_D,bank_A,0.58,0.47,2,bank_A,0.66
+86275,Albertsons,45.0,Groceries,2023-12-23,December,17699,spending,paid_out,bank_E,bank_A,0.36,0.41,1,bank_A,0.66
+86276,Pharmacy - Prescription Medications,28.6,Healthcare,2023-12-23,December,17699,spending,paid_out,bank_E,bank_A,0.23,0.21,1,bank_A,0.66
+86278,Transfer to Investment Account,400.0,Transfers,2023-12-23,December,17699,spending,paid_out,bank_C,bank_A,0.54,0.17,3,bank_A,0.66
+86320,Online Retailer - Electronics Purchase,299.99,Online Shopping,2023-12-23,December,17699,spending,paid_out,bank_D,bank_A,0.58,0.5,3,bank_A,0.66
+88523,Fuel Purchase - Gas Station,40.75,Transportation,2023-12-25,December,17699,spending,paid_out,bank_C,bank_A,0.22,0.47,1,bank_A,0.66
+88529,Grocery Store - Fresh Produce,35.45,Groceries,2023-12-25,December,17699,spending,paid_out,bank_B,bank_A,0.21,0.11,1,bank_A,0.66
+88540,Online Shopping - Tech Accessories,59.99,Online Shopping,2023-12-25,December,17699,spending,paid_out,bank_B,bank_A,0.33,0.38,1,bank_A,0.66
+89813,Online Shopping - Apparel,69.99,Online Shopping,2023-12-26,December,17699,spending,paid_out,bank_B,bank_A,0.57,0.41,1,bank_A,0.66
+91184,Transfer to Investment Account,500.0,Transfers,2023-12-28,December,17699,spending,paid_out,bank_B,bank_A,0.54,0.3,3,bank_A,0.66
+91203,Marks & Spencer,55.0,Groceries,2023-12-28,December,17699,spending,paid_out,bank_A,bank_A,0.42,0.29,1,bank_A,0.66
+91221,Gas Station - Fuel Purchase,40.45,Transportation,2023-12-28,December,17699,spending,paid_out,bank_E,bank_A,0.16,0.24,1,bank_A,0.66
+91222,Monthly Account Maintenance Fee,7.0,Bank Fees,2023-12-28,December,17699,spending,paid_out,bank_E,bank_A,0.37,0.15,1,bank_A,0.66
+91231,Giant Food,45.0,Groceries,2023-12-28,December,17699,spending,paid_out,bank_E,bank_A,0.14,0.48,1,bank_A,0.66
+94106,Online Retailer - Clothing Purchase,70.99,Online Shopping,2023-12-31,December,17699,spending,paid_out,bank_C,bank_A,0.56,0.66,1,bank_A,0.66
+94107,Online Retailer - Electronics Purchase,199.99,Online Shopping,2023-12-31,December,17699,spending,paid_out,bank_A,bank_A,0.57,0.7,3,bank_A,0.66
+94109,Co-op,40.0,Groceries,2023-12-31,December,17699,spending,paid_out,bank_C,bank_A,0.19,0.26,1,bank_A,0.66
+94166,Transfer to Emergency Fund,150.0,Transfers,2023-12-31,December,17699,spending,paid_out,bank_D,bank_A,0.55,0.39,2,bank_A,0.66
+95736,Utilities Payment - Water and Sewer,65.0,Utilities,2024-01-01,January,17699,spending,paid_out,bank_C,bank_A,0.33,0.58,1,bank_A,0.66
+95756,Rent Payment,1200.0,Housing,2024-01-01,January,17699,spending,paid_out,bank_B,bank_A,0.77,0.25,3,bank_A,0.66
+97988,Fast Food - Lunch on the Go,10.5,Dining Out,2024-01-02,January,17699,spending,paid_out,bank_A,bank_A,0.37,0.47,1,bank_A,0.66
+98002,Internet Service Payment - Provider Name,70.0,Utilities,2024-01-02,January,17699,spending,paid_out,bank_C,bank_A,0.37,0.48,1,bank_A,0.66
+98890,Phone Bill Payment - Wireless Provider,65.0,Utilities,2024-01-03,January,17699,spending,paid_out,bank_C,bank_A,0.52,0.35,1,bank_A,0.66
+100370,Verizon Wireless - Monthly Phone Bill,75.5,Utilities,2024-01-04,January,17699,spending,paid_out,bank_E,bank_A,0.46,0.65,1,bank_A,0.66
+102860,Credit Card Payment - American Express **** 5678,175.0,Credit Card Payment,2024-01-06,January,17699,spending,paid_out,bank_E,bank_A,0.68,0.64,3,bank_A,0.66
+102867,Grocery Shopping - Fresh Mart,45.3,Groceries,2024-01-06,January,17699,spending,paid_out,bank_A,bank_A,0.3,0.23,1,bank_A,0.66
+102879,Credit Card Payment - American Express **** 6789,180.0,Credit Card Payment,2024-01-06,January,17699,spending,paid_out,bank_A,bank_A,0.69,0.54,3,bank_A,0.66
+102887,Charitable Donation - Charity Name,50.0,Charity,2024-01-06,January,17699,spending,paid_out,bank_D,bank_A,0.11,0.41,1,bank_A,0.66
+103706,Transfer from Current to Savings,150.0,Transfers,2024-01-07,January,17699,spending,paid_out,bank_A,bank_A,0.43,0.29,2,bank_A,0.66
+103831,Transfer to Vacation Fund,300.0,Transfers,2024-01-07,January,17699,spending,paid_out,bank_A,bank_A,0.61,0.31,3,bank_A,0.66
+104016,Kroger,40.0,Groceries,2024-01-08,January,17699,spending,paid_out,bank_B,bank_A,0.23,0.37,1,bank_A,0.66
+104249,Grant Approval - Small Processing Charge,48.05,Utilities,2024-01-08,January,17699,spending,paid_out,bank_A,bank_A,0.3,0.59,1,bank_A,0.66
+105515,Home Improvement - Home Depot,110.45,Home Improvement,2024-01-09,January,17699,spending,paid_out,bank_D,bank_A,0.54,0.27,2,bank_A,0.66
+106471,Restaurant - Dinner with Friends,90.0,Dining Out,2024-01-10,January,17699,spending,paid_out,bank_E,bank_A,0.41,0.33,2,bank_A,0.66
+106495,Credit Card Payment - Visa **** 7890,85.25,Credit Card Payment,2024-01-10,January,17699,spending,paid_out,bank_C,bank_A,0.57,0.53,2,bank_A,0.66
+106507,Behavioral Health Counseling - Mental Health Support,120.0,Healthcare,2024-01-10,January,17699,spending,paid_out,bank_D,bank_A,0.43,0.57,2,bank_A,0.66
+107267,Forever 21 - Activewear,30.0,Shopping,2024-01-11,January,17699,spending,paid_out,bank_E,bank_A,0.35,0.12,1,bank_A,0.66
+108123,ClothesOnline additional posting payment,35.7,Shopping,2024-01-12,January,17699,spending,paid_out,bank_A,bank_A,0.19,0.58,1,bank_A,0.66
+108322,Transfer to Emergency Fund,150.0,Transfers,2024-01-12,January,17699,spending,paid_out,bank_B,bank_A,0.67,0.16,2,bank_A,0.66
+108386,Fuel Purchase - Gas Station,42.75,Transportation,2024-01-12,January,17699,spending,paid_out,bank_D,bank_A,0.15,0.11,1,bank_A,0.66
+108387,Online Retailer - Tech Gadgets,249.99,Online Shopping,2024-01-12,January,17699,spending,paid_out,bank_B,bank_A,0.68,0.28,3,bank_A,0.66
+108585,Coffee Shop - Latte and Croissant,6.75,Dining Out,2024-01-13,January,17699,spending,paid_out,bank_E,bank_A,0.14,0.3,1,bank_A,0.66
+108587,Fuel Purchase - Gas Station,46.4,Transportation,2024-01-13,January,17699,spending,paid_out,bank_C,bank_A,0.27,0.32,1,bank_A,0.66
+111951,Online Shopping - Tech Accessories,59.99,Online Shopping,2024-01-16,January,17699,spending,paid_out,Intrnl,bank_A,0.37,0.29,3,bank_A,0.66
+112753,Topshop - Affordable Style,50.0,Shopping,2024-01-17,January,17699,spending,paid_out,bank_E,bank_A,0.3,0.49,1,bank_A,0.66
+114059,Transfer to Vacation Fund,400.0,Transfers,2024-01-19,January,17699,spending,paid_out,bank_B,bank_A,0.76,0.5,3,bank_A,0.66
+115865,Transfer to Emergency Fund,200.0,Transfers,2024-01-21,January,17699,spending,paid_out,bank_E,bank_A,0.54,0.66,3,bank_A,0.66
+115872,Transfer to Vacation Fund,350.0,Transfers,2024-01-21,January,17699,spending,paid_out,bank_D,bank_A,0.56,0.4,3,bank_A,0.66
+115917,Kmart Super Centers,50.0,Groceries,2024-01-21,January,17699,spending,paid_out,bank_A,bank_A,0.27,0.5,1,bank_A,0.66
+117525,Transfer from Current to Savings,150.0,Transfers,2024-01-22,January,17699,spending,paid_out,bank_A,bank_A,0.54,0.25,2,bank_A,0.66
+118308,Foreign Exchange Investment - Safe and Secure,137.65,Investment,2024-01-23,January,17699,spending,paid_out,Intrnl,bank_A,0.66,0.72,4,bank_A,0.66
+120032,Restaurant - Dinner with Friends,100.0,Dining Out,2024-01-25,January,17699,spending,paid_out,bank_E,bank_A,0.45,0.39,2,bank_A,0.66
+120921,Online Shopping - Electronics,149.99,Online Shopping,2024-01-26,January,17699,spending,paid_out,bank_E,bank_A,0.43,0.44,2,bank_A,0.66
+121036,Netflix Subscription - Monthly Charge,12.99,Streaming Services,2024-01-26,January,17699,spending,paid_out,bank_C,bank_A,0.14,0.13,1,bank_A,0.66
+121887,Infusion Center - IV Therapy,110.0,Healthcare,2024-01-27,January,17699,spending,paid_out,bank_D,bank_A,0.65,0.56,2,bank_A,0.66
+121888,Credit Card Payment - American Express **** 3456,200.0,Credit Card Payment,2024-01-27,January,17699,spending,paid_out,bank_E,bank_A,0.63,0.54,3,bank_A,0.66
+123250,Foot Locker - Athletic Footwear,50.0,Shopping,2024-01-28,January,17699,spending,paid_out,bank_A,bank_A,0.16,0.3,1,bank_A,0.66
+123270,Online Shopping - Apparel,69.99,Online Shopping,2024-01-28,January,17699,spending,paid_out,bank_D,bank_A,0.43,0.36,1,bank_A,0.66
+123271,Walmart Grocery,60.0,Groceries,2024-01-28,January,17699,spending,paid_out,bank_A,bank_A,0.44,0.44,1,bank_A,0.66
+123272,Save Mart Supermarkets,45.0,Groceries,2024-01-28,January,17699,spending,paid_out,bank_E,bank_A,0.38,0.36,1,bank_A,0.66
+123273,Fast Food - Dinner Combo,15.25,Dining Out,2024-01-28,January,17699,spending,paid_out,bank_B,bank_A,0.36,0.25,1,bank_A,0.66
+123566,Home Improvement - Hardware Store,85.6,Home Improvement,2024-01-29,January,17699,spending,paid_out,bank_A,bank_A,0.48,0.68,2,bank_A,0.66
+125943,Coles,55.0,Groceries,2024-01-31,January,17699,spending,paid_out,bank_D,bank_A,0.33,0.11,1,bank_A,0.66
+125999,Home Care Supplies - Medical Equipment,110.0,Healthcare,2024-01-31,January,17699,spending,paid_out,bank_A,bank_A,0.58,0.36,2,bank_A,0.66
+126048,Smith's Food and Drug,50.0,Groceries,2024-01-31,January,17699,spending,paid_out,bank_E,bank_A,0.2,0.4,1,bank_A,0.66
+126049,Grocery Shopping - Supermart,56.75,Groceries,2024-01-31,January,17699,spending,paid_out,bank_C,bank_A,0.34,0.17,1,bank_A,0.66
+126056,Grocery Store - Fresh Produce,38.45,Groceries,2024-01-31,January,17699,spending,paid_out,bank_D,bank_A,0.19,0.55,1,bank_A,0.66
+127155,Transfer to Investment Account,450.0,Transfers,2024-02-01,February,17699,spending,paid_out,bank_B,bank_A,0.62,0.46,3,bank_A,0.66
+127156,PacSun - Teen Fashion,45.0,Shopping,2024-02-01,February,17699,spending,paid_out,bank_D,bank_A,0.24,0.59,1,bank_A,0.66
+127158,Utilities Payment - Water and Sewer,65.0,Utilities,2024-02-01,February,17699,spending,paid_out,bank_C,bank_A,0.42,0.54,1,bank_A,0.66
+127492,Smart & Final,35.0,Groceries,2024-02-01,February,17699,spending,paid_out,bank_A,bank_A,0.38,0.18,1,bank_A,0.66
+127493,Rent Payment,1200.0,Housing,2024-02-01,February,17699,spending,paid_out,bank_D,bank_A,0.52,0.56,3,bank_A,0.66
+130084,Charitable Donation - Charity Name,50.0,Charity,2024-02-02,February,17699,spending,paid_out,bank_D,bank_A,0.3,0.62,1,bank_A,0.66
+130086,Coffee Shop - Morning Brew,5.25,Dining Out,2024-02-02,February,17699,spending,paid_out,bank_B,bank_A,0.15,0.48,1,bank_A,0.66
+130088,Internet Service Payment - Provider Name,70.0,Utilities,2024-02-02,February,17699,spending,paid_out,bank_C,bank_A,0.56,0.66,1,bank_A,0.66
+131579,Phone Bill Payment - Wireless Provider,65.0,Utilities,2024-02-03,February,17699,spending,paid_out,bank_C,bank_A,0.46,0.5,1,bank_A,0.66
+131583,Home Improvement - Home Depot,110.45,Home Improvement,2024-02-03,February,17699,spending,paid_out,bank_A,bank_A,0.53,0.31,2,bank_A,0.66
+131584,Shaw's,40.0,Groceries,2024-02-03,February,17699,spending,paid_out,bank_C,bank_A,0.16,0.56,1,bank_A,0.66
