@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from fraud_detection import modelling as md
+from fraud_detection import models as md
 
 
 class TestModelling(unittest.TestCase):
@@ -15,7 +15,7 @@ class TestModelling(unittest.TestCase):
 
     def test_solve_initial_model(self):
         # Test solve_initial_model function
-        results = md.solve_initial_model(self.mock_transactions, {'Utilities': 0.3}, {'Internet': 0.05}, 1000)
+        results = md.solve_initial_model(self.mock_transactions, {'Utilities': 0.3}, 1000)
         self.assertIsInstance(results, tuple)
         self.assertIsInstance(results[0], list)  # Internal investigations
         self.assertIsInstance(results[1], list)  # External investigations

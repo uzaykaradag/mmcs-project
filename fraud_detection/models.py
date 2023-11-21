@@ -1,5 +1,4 @@
 from pulp import *
-import itertools
 
 # Global Constants
 COST_EXTERNAL_INVESTIGATOR = {1: 40, 2: 60, 3: 100, 4: 150}
@@ -7,13 +6,13 @@ TIME_REQUIRED = {1: 0.25, 2: 0.5, 3: 1, 4: 2}
 SIZE_INVESTIGATION_TEAM = {"bank_a": 8, "bank_b": 12, "bank_c": 10, "bank_d": 10, "bank_e": 10}
 
 
-def solve_initial_model(transactions, limits_category, limits_description, budget_daily):
+def solve_initial_model(transactions, limits_category, budget_daily):
     """
     Solves an optimization problem to maximize the expected value saved from fraud investigations.
 
     Parameters:
     - transactions (pd.DataFrame): DataFrame containing transaction details.
-    - limits_category (dict): Dictionary mapping categories to their respective investigation limits.
+    - limits_category (dict): Dictionary mapping categories to their respective investigation limits as ratios.
     - limits_description (dict): Dictionary mapping descriptions to their respective investigation limits.
     - budget_daily (float): Daily budget available for external investigations.
 
@@ -37,8 +36,8 @@ def solve_initial_model(transactions, limits_category, limits_description, budge
 
     # Objective function
     model += lpSum([amount[trans] * probability_combined[trans] * (
-                internal_investigation[trans] + external_investigation[trans]) - cost[trans] * external_investigation[
-                        trans] for trans in transactions.index])
+            internal_investigation[trans] + external_investigation[trans]) - cost[trans] * external_investigation[trans]
+                    for trans in transactions.index])
 
     # Constraints
     # Single Investigation Constraint
@@ -47,7 +46,8 @@ def solve_initial_model(transactions, limits_category, limits_description, budge
 
     # Shared Investigation Constraint
     for trans in transactions.index:
-        if transactions.loc[trans, 'bank_from'] != transactions.loc[trans, 'bank_to']:
+        if transactions.loc[trans, 'bank_from'] != transactions.loc[trans, 'bank_to'] and transactions.loc[
+            trans, "bank_to"] != "Intrnl":
             model += shared_investigation[trans] <= 1
         else:
             model += shared_investigation[trans] == 0
@@ -68,16 +68,17 @@ def solve_initial_model(transactions, limits_category, limits_description, budge
     # Budget Constraint
     model += lpSum([external_investigation[trans] * cost[trans] for trans in transactions.index]) <= budget_daily
 
-    # Category and Description Constraints
+    # Total Investigations Variable
+    total_investigations = lpSum(
+        [internal_investigation[trans] + external_investigation[trans] + shared_investigation[trans] for trans in
+         transactions.index])
+
+    # Category Limit Constraints as Ratios
     for category in limits_category:
         trans_category = transactions[transactions["category"] == category].index
-        model += lpSum([internal_investigation[trans] + external_investigation[trans] + shared_investigation[trans] for trans in trans_category]) <= limits_category[category]
-
-    for description in limits_description:
-        trans_description = transactions[transactions["description"].str.contains(description)].index
-        model += lpSum([internal_investigation[trans] + external_investigation[trans] + shared_investigation[trans] for trans in trans_description]) <= limits_description[description]
-
-
+        model += lpSum(
+            [internal_investigation[trans] + external_investigation[trans] + shared_investigation[trans] for trans in
+             trans_category]) <= limits_category[category] * total_investigations
 
     # Solve and return results
     model.solve()
@@ -171,3 +172,30 @@ def solve_second_model(transactions, fraudulent_transactions, budget_daily):
     value_at_stake = pulp.value(model.objective)
 
     return investigated_internal, investigated_external, value_at_stake
+
+
+def calculate_loss(limits_category, transactions, budget_daily, fraudulent_transactions):
+    """
+    Calculates the loss for a given limits_category configuration.
+
+    Parameters:
+    - limits_category (dict): Dictionary mapping categories to their respective investigation limits.
+    - transactions (pd.DataFrame): DataFrame containing transaction details.
+    - budget_daily (float): Daily budget available for external investigations.
+    - fraudulent_transactions (set): IDs of transactions that are actually fraudulent.
+
+    Returns:
+    float: The loss value calculated as value_at_stake - total_saved.
+    """
+    # Solve the second model to get the value at stake
+    _, _, value_at_stake = solve_second_model(transactions, fraudulent_transactions, budget_daily)
+
+    # Solve the initial model to get the transactions investigated internally and externally
+    investigated_internal, investigated_external, _ = solve_initial_model(transactions, limits_category, budget_daily)
+
+    # Compute the actual value saved
+    total_saved = compute_actual_value_saved(investigated_internal, investigated_external, transactions,
+                                             fraudulent_transactions)
+
+    # Calculate and return the loss
+    return value_at_stake - total_saved
