@@ -13,10 +13,10 @@ Where:
 
 **Decision Variables**:
 
-- $x_{ijp}$: Binary decision variable, where$x_{ij} = 1$if bank$j$investigates transaction$i$, and 0
+- $x_{ijp}$: Binary decision variable, where $x_{ij} = 1$ if bank$j$investigates transaction $i$ , and 0
   otherwise, p denotes the priority of the transaction.
-- $y_{ijp}$: Binary decision, variable, where$y_{ij} = 1$if bank$j$decides to hire a private investigator for
-  the investigation of transaction$i$, and 0 otherwise, p denotes the priority of the transaction.
+- $y_{ijp}$: Binary decision, variable, where $y_{ij} = 1$ if bank$j$decides to hire a private investigator for
+  the investigation of transaction $i$ , and 0 otherwise, p denotes the priority of the transaction.
 
 **Static Parameters**:
 
